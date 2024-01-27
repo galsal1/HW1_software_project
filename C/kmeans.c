@@ -267,5 +267,33 @@ int moveVector(int vector_index,int cnt){
 }
 
 int main(int argc, char *argv[]) {
+    initparametrs(argc,argv);
+    initK_centroid();
+    init_data();
 
+    int moveflag;
+    double deltasum;
+    for(int cnt=0;cnt<iter;cnt++){
+        moveflag=0,deltasum=0;
+        for(int i=0;i<N;i++) {
+            moveflag = moveVector(i,cnt) || moveflag ;
+        }
+        groupsMean();
+        deltasum += All_euclidean_distance();
+        K_centroid = Mean_vector;
+        if(cnt!=0 && (deltasum<0.001 || !moveflag)){
+            break;
+        }
+    }
+
+    //print K_centroid
+    for(int i=0;i<K;i++){
+        for(int j=0;j<d;j++){
+            if(j<d-1)
+                printf("%.4f ,",K_centroid[i*d+j]);
+            else
+                printf("%.4f",K_centroid[i*d+j]);
+        }
+        printf("\n");
+    }
 }
