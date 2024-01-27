@@ -211,6 +211,27 @@ void groupsMean(){
     }
 }
 
+double All_euclidean_distance() {
+    double res = 0;
+    for (int i = 0; i < K; i++) {
+        double temp = 0;
+        for (int j = 0; j < d; j++){
+            temp+= pow(K_centroid[i*d+j]-Mean_vector[i*d+j],2);
+        }
+        res += sqrt(temp);
+    }
+    return res;
+}
+
+double euclidean_distance(int vector1,int Kvector2) {
+    double res = 0;
+    for (int j = 0; j < d; j++){
+        res+= pow(data[vector1*d+j]-K_centroid[Kvector2*d+j],2);
+    }
+    res = sqrt(res);
+    return res;
+}
+
 int main(int argc, char *argv[]) {
 
 }
