@@ -228,6 +228,44 @@ double euclidean_distance(int vector1,int Kvector2) {
     return res;
 }
 
+int indexofSmallestElement(double array[], int size)
+{
+    int index = 0;
+    if (size != 1)
+    {
+
+        double n = array[0];
+        for (int i = 1; i < size; i++)
+        {
+            if (array[i] < n)
+            {
+                n = array[i];
+                index = i;
+            }
+        }
+    }
+    return index;
+}
+
+int moveVector(int vector_index,int cnt){
+    int current_group = places[vector_index];
+    double distances[K] ={};
+    for(int i=0;i<K;i++){
+        distances[i] = euclidean_distance(vector_index,i);
+    }
+    int min_index = indexofSmallestElement(distances,K);
+    if (min_index == current_group)
+        return 0;
+    else {
+        places[vector_index] = min_index;
+        Group_size[min_index] += 1;
+        if(cnt) {
+            Group_size[current_group] -= 1;
+        }
+        return 1;
+    }
+}
+
 int main(int argc, char *argv[]) {
 
 }
