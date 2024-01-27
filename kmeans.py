@@ -86,7 +86,7 @@ if __name__ == '__main__':
 
     print()
 
-    output = open("output_3.txt", "r")
+    output = open("output_2.txt", "r")
     lines = [line.rstrip() for line in output]
     for line in lines:
         print(line)

@@ -1,0 +1,60 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.27"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "HW1_C",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "HW1_C::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-HW1_C-Debug-fcb56ee36fa5035d582c.json",
+					"name" : "HW1_C",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/galha/Documents/gal/\u05dc\u05d9\u05de\u05d5\u05d3\u05d9\u05dd/\u05ea\u05d5\u05d0\u05e8 \u05e8\u05d0\u05e9\u05d5\u05df \u05de\u05d3\u05e2\u05d9 \u05d4\u05de\u05d7\u05e9\u05d1/\u05e9\u05e0\u05d4 \u05d1/\u05e1\u05de\u05e1\u05d8\u05e8 \u05d0/\u05e4\u05e8\u05d5\u05d9\u05e7\u05d8 \u05ea\u05d5\u05db\u05e0\u05d4/HW1_software_project/HW1_C/cmake-build-debug",
+		"source" : "C:/Users/galha/Documents/gal/\u05dc\u05d9\u05de\u05d5\u05d3\u05d9\u05dd/\u05ea\u05d5\u05d0\u05e8 \u05e8\u05d0\u05e9\u05d5\u05df \u05de\u05d3\u05e2\u05d9 \u05d4\u05de\u05d7\u05e9\u05d1/\u05e9\u05e0\u05d4 \u05d1/\u05e1\u05de\u05e1\u05d8\u05e8 \u05d0/\u05e4\u05e8\u05d5\u05d9\u05e7\u05d8 \u05ea\u05d5\u05db\u05e0\u05d4/HW1_software_project/HW1_C"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}
