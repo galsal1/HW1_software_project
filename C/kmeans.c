@@ -194,6 +194,23 @@ void init_data(){
     N=cnt;
 }
 
+void groupsMean(){
+    Mean_vector = calloc(K*d,sizeof(double));
+    for(int i=0;i<K*d;i++) {
+        Mean_vector[i]=0;
+    }
+    for(int i=0;i<N;i++) {
+        for(int j=0;j<d;j++){
+            Mean_vector[places[i]*d+j] += data[i*d+j];
+        }
+    }
+    for(int i=0;i<K;i++) {
+        for(int j=0;j<d;j++){
+            Mean_vector[i*d+j] /= Group_size[i];
+        }
+    }
+}
+
 int main(int argc, char *argv[]) {
 
 }
