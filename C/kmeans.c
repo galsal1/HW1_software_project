@@ -63,6 +63,9 @@ size_t getline(char **lineptr, size_t *n, FILE *stream) {
 }
 
 void initparametrs(int argc, char *argv[]){
+    if(argc<5){
+        exit(-1);
+    }
     char *p;
     //init N
     long Nlong = strtol(argv[2], &p, 10);
@@ -133,7 +136,7 @@ void initK_centroid(){
                 K_centroid[(i*d)+j] = strtod(start, &end);
                 if (start == end) {
                     fprintf(stderr, "Error parsing double at line %d, column %d\n", i+1, j+1);
-                    break;
+                    exit(-1);
                 }
                 start = end;
                 while (*start == ',') {
@@ -142,7 +145,7 @@ void initK_centroid(){
             }
         } else {
             fprintf(stderr, "File contains fewer lines than expected.\n");
-            break;
+            exit(-1);
         }
         Group_size[i]=0;
     }
@@ -176,7 +179,7 @@ void init_data(){
                 data[(i * d) + j] = strtod(start, &end);
                 if (start == end) {
                     fprintf(stderr, "Error parsing double at line %d, column %d\n", i + 1, j + 1);
-                    break;
+                    exit(-1);
                 }
                 start = end;
                 while (*start == ',') {
