@@ -1,6 +1,3 @@
-//
-// Created by galha on 27/01/2024.
-//
 #include <stdio.h>
 #include <math.h>
 #include <stdlib.h>
@@ -13,7 +10,6 @@ int* Group_size;
 double* K_centroid;
 double* Mean_vector;
 
-//getline func delete in nova server
 size_t getline(char **lineptr, size_t *n, FILE *stream) {
     char *bufptr = NULL;
     char *p = bufptr;
@@ -194,110 +190,6 @@ void init_data(){
     N=cnt;
 }
 
-void groupsMean(){
-    Mean_vector = calloc(K*d,sizeof(double));
-    for(int i=0;i<K*d;i++) {
-        Mean_vector[i]=0;
-    }
-    for(int i=0;i<N;i++) {
-        for(int j=0;j<d;j++){
-            Mean_vector[places[i]*d+j] += data[i*d+j];
-        }
-    }
-    for(int i=0;i<K;i++) {
-        for(int j=0;j<d;j++){
-            Mean_vector[i*d+j] /= Group_size[i];
-        }
-    }
-}
-
-double All_euclidean_distance() {
-    double res = 0;
-    for (int i = 0; i < K; i++) {
-        double temp = 0;
-        for (int j = 0; j < d; j++){
-            temp+= pow(K_centroid[i*d+j]-Mean_vector[i*d+j],2);
-        }
-        res += sqrt(temp);
-    }
-    return res;
-}
-
-double euclidean_distance(int vector1,int Kvector2) {
-    double res = 0;
-    for (int j = 0; j < d; j++){
-        res+= pow(data[vector1*d+j]-K_centroid[Kvector2*d+j],2);
-    }
-    res = sqrt(res);
-    return res;
-}
-
-int indexofSmallestElement(double array[], int size)
-{
-    int index = 0;
-    if (size != 1)
-    {
-
-        double n = array[0];
-        for (int i = 1; i < size; i++)
-        {
-            if (array[i] < n)
-            {
-                n = array[i];
-                index = i;
-            }
-        }
-    }
-    return index;
-}
-
-int moveVector(int vector_index,int cnt){
-    int current_group = places[vector_index];
-    double distances[K] ={};
-    for(int i=0;i<K;i++){
-        distances[i] = euclidean_distance(vector_index,i);
-    }
-    int min_index = indexofSmallestElement(distances,K);
-    if (min_index == current_group)
-        return 0;
-    else {
-        places[vector_index] = min_index;
-        Group_size[min_index] += 1;
-        if(cnt) {
-            Group_size[current_group] -= 1;
-        }
-        return 1;
-    }
-}
-
 int main(int argc, char *argv[]) {
-    initparametrs(argc,argv);
-    initK_centroid();
-    init_data();
 
-    int moveflag;
-    double deltasum;
-    for(int cnt=0;cnt<iter;cnt++){
-        moveflag=0,deltasum=0;
-        for(int i=0;i<N;i++) {
-            moveflag = moveVector(i,cnt) || moveflag ;
-        }
-        groupsMean();
-        deltasum += All_euclidean_distance();
-        K_centroid = Mean_vector;
-        if(cnt!=0 && (deltasum<0.001 || !moveflag)){
-            break;
-        }
-    }
-
-    //print K_centroid
-    for(int i=0;i<K;i++){
-        for(int j=0;j<d;j++){
-            if(j<d-1)
-                printf("%.4f ,",K_centroid[i*d+j]);
-            else
-                printf("%.4f",K_centroid[i*d+j]);
-        }
-        printf("\n");
-    }
 }

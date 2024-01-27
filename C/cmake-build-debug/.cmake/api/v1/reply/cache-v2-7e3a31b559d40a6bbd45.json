@@ -515,7 +515,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "C:/Program Files (x86)/HW1_C"
+			"value" : "C:/Program Files (x86)/C"
 		},
 		{
 			"name" : "CMAKE_LINKER",
@@ -731,7 +731,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "HW1_C"
+			"value" : "C"
 		},
 		{
 			"name" : "CMAKE_RANLIB",
@@ -1126,7 +1126,7 @@
 			"value" : "FALSE"
 		},
 		{
-			"name" : "HW1_C_BINARY_DIR",
+			"name" : "C_BINARY_DIR",
 			"properties" : 
 			[
 				{
@@ -1138,7 +1138,7 @@
 			"value" : "C:/Users/galha/Documents/gal/\u05dc\u05d9\u05de\u05d5\u05d3\u05d9\u05dd/\u05ea\u05d5\u05d0\u05e8 \u05e8\u05d0\u05e9\u05d5\u05df \u05de\u05d3\u05e2\u05d9 \u05d4\u05de\u05d7\u05e9\u05d1/\u05e9\u05e0\u05d4 \u05d1/\u05e1\u05de\u05e1\u05d8\u05e8 \u05d0/\u05e4\u05e8\u05d5\u05d9\u05e7\u05d8 \u05ea\u05d5\u05db\u05e0\u05d4/HW1_software_project/C/cmake-build-debug"
 		},
 		{
-			"name" : "HW1_C_IS_TOP_LEVEL",
+			"name" : "C_IS_TOP_LEVEL",
 			"properties" : 
 			[
 				{
@@ -1150,7 +1150,7 @@
 			"value" : "ON"
 		},
 		{
-			"name" : "HW1_C_SOURCE_DIR",
+			"name" : "C_SOURCE_DIR",
 			"properties" : 
 			[
 				{

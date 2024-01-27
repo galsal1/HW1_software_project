@@ -11,7 +11,7 @@
 # =============================================================================
 
 # =============================================================================
-# Project: HW1_C
+# Project: C
 # Configurations: Debug
 # =============================================================================
 
@@ -41,38 +41,40 @@ include CMakeFiles/rules.ninja
 
 cmake_ninja_workdir = C$:/Users/galha/Documents/gal/לימודים/תואר$ ראשון$ מדעי$ המחשב/שנה$ ב/סמסטר$ א/פרויקט$ תוכנה/HW1_software_project/C/cmake-build-debug/
 # =============================================================================
-# Object build statements for STATIC_LIBRARY target HW1_C
+# Object build statements for EXECUTABLE target C
 
 
 #############################################
-# Order-only phony target for HW1_C
+# Order-only phony target for C
 
-build cmake_object_order_depends_target_HW1_C: phony || CMakeFiles/HW1_C.dir
+build cmake_object_order_depends_target_C: phony || CMakeFiles/C.dir
 
-build CMakeFiles/HW1_C.dir/kmeans.c.obj: C_COMPILER__HW1_C_unscanned_Debug C$:/Users/galha/Documents/gal/לימודים/תואר$ ראשון$ מדעי$ המחשב/שנה$ ב/סמסטר$ א/פרויקט$ תוכנה/HW1_software_project/C/kmeans.c || cmake_object_order_depends_target_HW1_C
-  DEP_FILE = CMakeFiles\HW1_C.dir\kmeans.c.obj.d
+build CMakeFiles/C.dir/main.c.obj: C_COMPILER__C_unscanned_Debug C$:/Users/galha/Documents/gal/לימודים/תואר$ ראשון$ מדעי$ המחשב/שנה$ ב/סמסטר$ א/פרויקט$ תוכנה/HW1_software_project/C/main.c || cmake_object_order_depends_target_C
+  DEP_FILE = CMakeFiles\C.dir\main.c.obj.d
   FLAGS = -g -std=gnu11 -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\HW1_C.dir
-  OBJECT_FILE_DIR = CMakeFiles\HW1_C.dir
-  TARGET_COMPILE_PDB = CMakeFiles\HW1_C.dir\HW1_C.pdb
-  TARGET_PDB = libHW1_C.pdb
+  OBJECT_DIR = CMakeFiles\C.dir
+  OBJECT_FILE_DIR = CMakeFiles\C.dir
+  TARGET_COMPILE_PDB = CMakeFiles\C.dir\
+  TARGET_PDB = C.pdb
 
 
 # =============================================================================
-# Link build statements for STATIC_LIBRARY target HW1_C
+# Link build statements for EXECUTABLE target C
 
 
 #############################################
-# Link the static library libHW1_C.a
+# Link the executable C.exe
 
-build libHW1_C.a: C_STATIC_LIBRARY_LINKER__HW1_C_Debug CMakeFiles/HW1_C.dir/kmeans.c.obj
-  LANGUAGE_COMPILE_FLAGS = -g
-  OBJECT_DIR = CMakeFiles\HW1_C.dir
+build C.exe: C_EXECUTABLE_LINKER__C_Debug CMakeFiles/C.dir/main.c.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\C.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = CMakeFiles\HW1_C.dir\HW1_C.pdb
-  TARGET_FILE = libHW1_C.a
-  TARGET_PDB = libHW1_C.pdb
+  TARGET_COMPILE_PDB = CMakeFiles\C.dir\
+  TARGET_FILE = C.exe
+  TARGET_IMPLIB = libC.dll.a
+  TARGET_PDB = C.pdb
 
 
 #############################################
@@ -100,7 +102,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # =============================================================================
 # Target aliases.
 
-build HW1_C: phony libHW1_C.a
+build C: phony C.exe
 
 # =============================================================================
 # Folder targets.
@@ -110,7 +112,7 @@ build HW1_C: phony libHW1_C.a
 #############################################
 # Folder: C:/Users/galha/Documents/gal/לימודים/תואר ראשון מדעי המחשב/שנה ב/סמסטר א/פרויקט תוכנה/HW1_software_project/C/cmake-build-debug
 
-build all: phony libHW1_C.a
+build all: phony C.exe
 
 # =============================================================================
 # Built-in targets
