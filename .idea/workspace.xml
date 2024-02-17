@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f440f296-ccec-4a30-b24c-bd44f010c78a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/kmeans.py" beforeDir="false" afterPath="$PROJECT_DIR$/kmeans.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/kmeans.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/kmeans.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,7 +25,7 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/galha/Documents/gal/לימודים/תואר ראשון מדעי המחשב/שנה ב/סמסטר א/פרויקט תוכנה/HW1_software_project/kmeans.py&quot;
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/galha/Documents/gal/לימודים/תואר ראשון מדעי המחשב/שנה ב/סמסטר א/פרויקט תוכנה/HW1_software_project/python/kmeans.py&quot;
   }
 }</component>
   <component name="RunManager">
@@ -37,11 +38,11 @@
       </envs>
       <option name="SDK_HOME" value="C:\Program Files\Python311\python.exe" />
       <option name="SDK_NAME" value="Python 3.11" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/kmeans.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python/kmeans.py" />
       <option name="PARAMETERS" value="7 800 11 input_2.txt" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />

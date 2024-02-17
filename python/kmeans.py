@@ -83,10 +83,3 @@ if __name__ == '__main__':
         res = Kmeans(args[0], args[1], args[2], "200", args[3])
     for i in range(int(args[0])):
         print(", ".join("%.4f" % x for x in res[i]))
-
-    print()
-
-    output = open("output_2.txt", "r")
-    lines = [line.rstrip() for line in output]
-    for line in lines:
-        print(line)
