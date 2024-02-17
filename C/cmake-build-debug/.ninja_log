@@ -1,8 +1,14 @@
 # ninja log v5
-3	164	7297766068386991	build.ninja	5bd3c2c9c8cce45d
-3	154	7298710553629003	CMakeFiles/C.dir/kmeans.c.obj	7fe6a933b7eede0b
-155	281	7298710554729665	C.exe	722d4cc374d8884a
-4	148	7298712908914097	CMakeFiles/C.dir/kmeans.c.obj	7fe6a933b7eede0b
-148	262	7298712910011066	C.exe	722d4cc374d8884a
-4	151	7298719218445321	CMakeFiles/C.dir/kmeans.c.obj	7fe6a933b7eede0b
-152	287	7298719219658642	C.exe	722d4cc374d8884a
+1	178	7298842140803466	build.ninja	5bd3c2c9c8cce45d
+3	140	7298800736547832	CMakeFiles/C.dir/kmeans.c.obj	7fe6a933b7eede0b
+140	278	7298800737838277	C.exe	722d4cc374d8884a
+14	131	7298799160743174	CMakeFiles/C.dir/temp.c.obj	f40cf7fddddee96a
+1	146	7298842140803466	build.ninja	5bd3c2c9c8cce45d
+3	180	7298842142828062	CMakeFiles/C.dir/kmeans.c.obj	7fe6a933b7eede0b
+8	185	7298842142888048	CMakeFiles/C.dir/kmeans(1).c.obj	15c9f595d7f87156
+3	167	7298842639657349	CMakeFiles/C.dir/kmeans(1).c.obj	15c9f595d7f87156
+9	180	7298842639757462	CMakeFiles/C.dir/kmeans.c.obj	7fe6a933b7eede0b
+3	150	7298842757943614	CMakeFiles/C.dir/kmeans(1).c.obj	15c9f595d7f87156
+9	155	7298842757993758	CMakeFiles/C.dir/kmeans.c.obj	7fe6a933b7eede0b
+3	157	7298842797292923	CMakeFiles/C.dir/kmeans(1).c.obj	15c9f595d7f87156
+8	157	7298842797292923	CMakeFiles/C.dir/kmeans.c.obj	7fe6a933b7eede0b

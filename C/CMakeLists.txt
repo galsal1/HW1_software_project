@@ -3,4 +3,5 @@ project(C C)
 
 set(CMAKE_C_STANDARD 11)
 
-add_executable(C kmeans.c)
+add_executable(C "kmeans.c"
+)

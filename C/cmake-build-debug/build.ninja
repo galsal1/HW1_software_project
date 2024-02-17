@@ -49,6 +49,12 @@ cmake_ninja_workdir = C$:/Users/galha/Documents/gal/לימודים/תואר$ ראשון$ מדעי$ ה
 
 build cmake_object_order_depends_target_C: phony || CMakeFiles/C.dir
 
+build CMakeFiles/C.dir/kmeans(1).c.obj: C_COMPILER__C_unscanned_Debug C$:/Users/galha/Documents/gal/לימודים/תואר$ ראשון$ מדעי$ המחשב/שנה$ ב/סמסטר$ א/פרויקט$ תוכנה/HW1_software_project/C/kmeans(1).c || cmake_object_order_depends_target_C
+  DEP_FILE = CMakeFiles\C.dir\kmeans(1).c.obj.d
+  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\C.dir
+  OBJECT_FILE_DIR = CMakeFiles\C.dir
+
 build CMakeFiles/C.dir/kmeans.c.obj: C_COMPILER__C_unscanned_Debug C$:/Users/galha/Documents/gal/לימודים/תואר$ ראשון$ מדעי$ המחשב/שנה$ ב/סמסטר$ א/פרויקט$ תוכנה/HW1_software_project/C/kmeans.c || cmake_object_order_depends_target_C
   DEP_FILE = CMakeFiles\C.dir\kmeans.c.obj.d
   FLAGS = -g -std=gnu11 -fdiagnostics-color=always
@@ -63,7 +69,7 @@ build CMakeFiles/C.dir/kmeans.c.obj: C_COMPILER__C_unscanned_Debug C$:/Users/gal
 #############################################
 # Link the executable C.exe
 
-build C.exe: C_EXECUTABLE_LINKER__C_Debug CMakeFiles/C.dir/kmeans.c.obj
+build C.exe: C_EXECUTABLE_LINKER__C_Debug CMakeFiles/C.dir/kmeans(1).c.obj CMakeFiles/C.dir/kmeans.c.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\C.dir
